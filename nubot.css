@@ -1,0 +1,85 @@
+.floatLeftPartial {
+	float: left;
+	width: 45%;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatClear {
+	clear: both;
+}
+
+.codeArea {
+	width: 500px; 
+	height: 510px;
+}
+
+.gridArea {
+	border: 1px solid gray;
+	width: 510px;
+	height: 510px;
+}
+
+.gridRow span{
+	width: 100px;
+	height: 100px;
+	border: 1px solid gray;
+	float: left;
+}
+
+.gridRowLast {
+	border: 1px solid gray;
+	float: left;
+}
+
+.gridRow {
+
+}
+
+.statusArea {
+	margin-top: 20px;
+	border: 1px dotted green;
+	height: auto;
+	font-style: italic;
+	font-family: verdana;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+span {
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+button, input[type=text] {
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+.radioArea {
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+label {
+	font-family: arial;
+	font-size: 13.3333px;
+}
+
+.radioArea input, .radioArea label {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}

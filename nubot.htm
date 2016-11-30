@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<script src="nubot.js"></script>
+<link rel="stylesheet" type="text/css" href="nubot.css">
+</head>
+
+<body onload="Init()">
+<h1>nubot 101</h1>
+
+<div id="master">
+
+	<div id="program" class="floatLeftPartial">
+		<div id="codeWrapper">
+			<textarea id="code" class="codeArea"></textarea>
+		</div>
+		<div id="executeWrapper">
+			<button id="Run" onclick="Run()">Run</button>
+			<button id="ResetPosition" onclick="ResetPosition()">Reset Position</button>
+			<div class="radioArea"><input type="radio" name="startPos" id="pos_center" value="pos_center" onclick="StorePos()" checked /><label for="pos_center">Start at Center</label></div>
+			<div class="radioArea"><input type="radio" name="startPos" id="pos_topleft" value="pos_topleft" onclick="StorePos()" /><label for="pos_topleft">Start at Top/Left</label></div>
+			<div id="speedArea">
+				<input type="text" size="1" value="100" id="speed" maxlength="4" onchange="StoreSpeed()" /><label for "speed">% Nubot speed</label>
+			</div>
+		</div>
+	</div>
+
+	<div id="bot" class="floatLeft">
+		<div id="grid" class="gridArea">
+			<div id="row1" class="gridRow">
+				<span id="Coord00"></span><span id="Coord10"></span><span id="Coord20"></span><span id="Coord30"></span><span id="Coord40" class="gridRowLast"></span>
+			</div>
+			<div id="row2" class="gridRow">
+				<span id="Coord01"></span><span id="Coord11"></span><span id="Coord21"></span><span id="Coord31"></span><span id="Coord41" class="gridRowLast"></span>
+			</div>
+			<div id="row3" class="gridRow">
+				<span id="Coord02"></span><span id="Coord12"></span><span id="Coord22"></span><span id="Coord32"></span><span id="Coord42" class="gridRowLast"></span>
+			</div>
+			<div id="row4" class="gridRow">
+				<span id="Coord03"></span><span id="Coord13"></span><span id="Coord23"></span><span id="Coord33"></span><span id="Coord43" class="gridRowLast"></span>
+			</div>
+			<div id="row5" class="gridRow">
+				<span id="Coord04"></span><span id="Coord14"></span><span id="Coord24"></span><span id="Coord34"></span><span id="Coord44" class="gridRowLast"></span>
+			</div>
+		</div>
+
+		<div id="status" class="statusArea">nubot ready</div>
+	</div>
+
+	<div class="floatClear" />
+</div>
+
+<div id="errorTemplate" class="hidden"><span class="error">error_placeholder</span></div>
+
+</body>
+<html>
+
+<script>
+SupportTab();
+</script>
